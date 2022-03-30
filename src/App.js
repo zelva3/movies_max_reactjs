@@ -16,7 +16,11 @@ const App = () => {
       const response = await fetch(`${API_URL}&s=${title}`);
       const result = await response.json();
       setMovieData(result.Search);
-      setLoader(false);
+      console.log(result.Search);
+      if (typeof result.Search === 'undefined') {
+        setLoader(false);
+      }
+      
     }
     if (title === '' && typeof moviedata === 'undefined') {
       setLoader(null);
