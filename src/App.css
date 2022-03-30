@@ -230,3 +230,23 @@ h1 {
     margin: 1rem;
   }
 }
+/* 
+.bottom-credit{
+  position:relative;
+} */
+.bottom-credit a, .bottom-credit a {
+  position: fixed;
+  bottom: 0;
+  color: #c4c4c4;
+  right: 0;
+  margin: 20px 20px;
+}
+
+.bottom-credit a h5{
+  font-weight: 800;
+  font-size: x-large;
+}
+.bottom-credit a {
+  display: flex;
+  gap: 10px;
+}

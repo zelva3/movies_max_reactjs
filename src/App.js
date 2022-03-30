@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './github-logo.png';
 import './App.css';
 import { useEffect, useState } from 'react';
 import MovieCard from './components/MovieCard';
@@ -18,7 +18,7 @@ const App = () => {
       setMovieData(result.Search);
       setLoader(false);
     }
-    if (title == '' && typeof moviedata == 'undefined') {
+    if (title === '' && typeof moviedata === 'undefined') {
       setLoader(null);
     }
   };
@@ -50,7 +50,12 @@ const App = () => {
         <h2> {loader == null ? "Search for a movie..." : (loader ? "Loading..." : "No movies found")}</h2>
       </div>
     }
-
+<div className='bottom-credit'>
+  <a href='https://github.com/zelva3/movies_max_reactjs' target="_blank">
+    <img src={logo} alt="Zelva"/>
+    <h5>Zelva</h5>
+    </a>
+</div>
   </div>);
 };
 
